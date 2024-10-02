@@ -3,6 +3,8 @@
 
 From the [CalEnderBackend](https://github.com/Vishalsutariya/CalEnderBackend/tree/main) directory:
 
+`npm install`
+
 `node server.js` 
 
 Ensure that the server is running and connected to MongoDB.
@@ -10,6 +12,9 @@ Ensure that the server is running and connected to MongoDB.
 ### Start the Frontend Application
 
 From your [React project directory](https://github.com/Vishalsutariya/CalEnderUI.git):
+
+`npm install`
+
 `npm start`
 
 
