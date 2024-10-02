@@ -2,7 +2,7 @@
 const express = require('express');
 const passport = require('passport');
 const router = express.Router();
-
+const payBoardUri = process.env.PAY_BOARD_URL
 // @desc   Auth with Google
 // @route  GET /auth/google
 router.get(
@@ -20,7 +20,7 @@ router.get(
   }),
   (req, res) => {
     // Successful authentication, redirect to frontend
-    res.redirect('http://localhost:3000');
+    res.redirect(`${payBoardUri}`);
   }
 );
 
@@ -31,7 +31,7 @@ router.get('/logout', (req, res, next) => {
       if (err) {
         return next(err);
       }
-      res.redirect('http://localhost:3000');
+      res.redirect(`${payBoardUri}`);
     });
 });
 
